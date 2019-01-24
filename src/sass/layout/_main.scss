@@ -1,0 +1,54 @@
+body {
+	font-family: $base-font-family;
+	font-size: 14px;
+	line-height: 1.7;
+	min-width: 320px;
+	color: $base-text-color;
+	overflow-x: hidden;
+}
+
+#wrapper {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+.container {
+	max-width: 1230px;
+	padding: 0 #{$grid-gutter-width / 2};
+	margin: 0 auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -#{$grid-gutter-width / 2};
+}
+
+.col {
+	padding: 0 #{$grid-gutter-width / 2};
+	flex-grow: 0;
+	flex-shrink: 0;
+
+	&.center {
+		justify-content: center;
+	}
+}
+
+@for $i from 1 through $grid-count {
+	.col-#{$i} {
+		width: 100% / $grid-count * $i;
+	}
+}
+
+
+@each $item, $breakpoint in $breakpoints {
+	@media all and (min-width: $breakpoint) {
+		@for $i from 1 through $grid-count {
+			.col-#{$item}-#{$i} {
+				width: 100% / $grid-count * $i;
+			}
+		}
+	}
+}
+

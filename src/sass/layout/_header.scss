@@ -1,0 +1,110 @@
+.image-bg{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/slide-mountain.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.navbar {
+  padding-bottom: 10px;
+  font-family: $secondary-font-family;
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+
+
+
+.icon-close{
+  display: none;
+}
+
+.nav-links, .icon-links-holder{
+  text-decoration: none;
+  color: $white;
+}
+
+
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+
+.logo {
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.navbar-toggle {
+  padding-top: 10px;
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.active {
+  display: block;
+}
+
+.noactive {
+  display: none;
+}
+
+.icon-links:first-child{
+  margin-left: 63px;
+}
+
+.icon-search{
+  margin-left: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    align-items: center;
+  }
+
+
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .main-nav li {
+    margin: 0;
+  }
+
+  .nav-links {
+    margin-left: 40px;
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  .navbar-toggle {
+    padding-top: 40px;
+    display: none;
+  }
+
+
+  .nav-links:hover {
+    color: $brown-light
+  }
+  .icon-links:hover {
+    color: $brown-light
+  }
+}
