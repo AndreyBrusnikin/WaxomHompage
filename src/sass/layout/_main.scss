@@ -52,3 +52,101 @@ body {
 	}
 }
 
+.button-pimary{
+	padding: 15px 27px;
+	color: $white;
+	line-height: 1.64;
+	font-weight: 800;
+	border-radius: 3px;
+	color: #fff;
+	background-color: $brown;
+	box-shadow: inset 0px -3px 0 0 #736357;
+	border: 2px solid transparent;
+	margin-bottom: 180px;
+}
+
+.button-pimary:hover{
+	background-color: $white;
+	border: 2px solid $brown;
+	color: $brown;
+	transition:  .5s;
+}
+
+.slider-holder{
+	display: flex;
+	justify-content: center;
+	margin-top: 125px;
+}
+
+.slider-content{
+	text-align: center;
+
+	p{
+		max-width: 562px;
+		font-family: $secondary-font-family;
+		font-size: 12px;
+		font-weight: 300;
+		line-height: 1.5;
+		margin-bottom: 52px;
+	}
+}
+
+h2{
+	font-size: 25px;
+	font-weight: 800;
+
+}
+
+.sider-info{
+	font-size: 19px;
+	font-weight: 500;
+
+}
+
+@media (min-width: 536px){
+
+	.slider-holder{
+		margin-top: 200px;
+	}
+
+	.button-pimary {
+		padding: 17px 35px;
+	}
+
+	.sider-info{
+		font-size: 27px;
+	}
+
+	h2{
+		font-size: 37px;
+	}
+
+	.slider-content p{
+			font-size: 14px;
+			margin-bottom: 82px;
+	}
+}
+
+@media (min-width: 768px){
+
+	.slider-holder{
+		margin-top: 280px;
+	}
+
+	.button-pimary {
+		padding: 17px 35px;
+		margin-bottom: 350px;
+	}
+
+	.sider-info{
+		font-size: 36px;
+	}
+
+	h2{
+		font-size: 52px;
+	}
+
+	.slider-content p{
+		font-size: 16px;
+	}
+}

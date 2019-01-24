@@ -3,31 +3,45 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
 }
-
 .navbar {
   padding-bottom: 10px;
   font-family: $secondary-font-family;
+  font-weight: 300;
+  padding-top: 40px;
 }
 
-.main-nav {
-  list-style-type: none;
+.toggle-main {
   display: none;
 }
-
-
 
 .icon-close{
   display: none;
 }
 
-.nav-links, .icon-links-holder{
+.nav-links {
   text-decoration: none;
   color: $white;
 }
 
+.right-nav{
+  list-style: none;
+  display: flex;
+  margin-left: 23px;
+  position: relative;
+  justify-content: flex-end;
+  top: -310px;
+}
 
+.ico-link{
+  color: $white;
+  text-decoration: none;
+
+}
+.main-nav{
+  color: $white;
+  list-style: none;
+}
 
 .main-nav li {
   text-align: center;
@@ -36,17 +50,14 @@
 
 
 .logo {
-  display: inline-block;
-  font-size: 22px;
   margin-top: 10px;
-  margin-left: 20px;
 }
 
 .navbar-toggle {
   padding-top: 10px;
   position: absolute;
-  top: 40px;
-  right: 20px;
+  top: 45px;
+  right: 30px;
   cursor: pointer;
   font-size: 24px;
 }
@@ -59,28 +70,33 @@
   display: none;
 }
 
-.icon-links:first-child{
-  margin-left: 63px;
-}
 
 .icon-search{
   margin-left: 24px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1071px) {
   .navbar {
     display: flex;
-    justify-content: space-between;
     padding-bottom: 0;
     align-items: center;
+    justify-content: space-between;
   }
-
 
   .main-nav {
     display: flex;
-    margin-right: 30px;
+    flex-wrap: wrap;
+    justify-content: space-around;
     flex-direction: row;
-    justify-content: flex-end;
+  }
+
+  .right-nav{
+    top: 0;
+  }
+
+  .toggle-main{
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .main-nav li {
@@ -88,7 +104,7 @@
   }
 
   .nav-links {
-    margin-left: 40px;
+    margin-right: 40px;
   }
 
   .logo {
@@ -100,11 +116,40 @@
     display: none;
   }
 
-
   .nav-links:hover {
     color: $brown-light
   }
-  .icon-links:hover {
+
+  .ico-link:hover {
     color: $brown-light
   }
+
+}
+
+.searchBar {
+  position: absolute;
+  bottom: -27px;
+  right: -19px ;
+  background-color: $white;
+  border: 0;
+  color: $black;
+  font-size: 9pt;
+  font-weight: 500;
+  margin-right: 10px;
+  padding: .25em .75em;
+  max-width: 70px;
+  text-align: left;
+  border-radius: 28px;
+  outline:none;
+}
+
+@media screen and (min-width: 425px) {
+  .searchBar{
+    max-width: 130px;
+  }
+}
+
+
+#toggle-search {
+
 }
