@@ -171,6 +171,8 @@ h2{
 }
 .owl-carousel{
 	margin-bottom: 30px;
+	position: relative;
+	z-index: 3;
 }
 
 @media (min-width: 576px){
@@ -418,6 +420,45 @@ h4{
 
 		}
 	}
+}
+
+.project-head{
+	text-align: center;
+
+	p{
+		
+		font-size: 16px;
+		max-width: 760px;
+		text-align: center;
+		margin: 0 auto;
+		color: $gray;
+	}
+}
+
+.project-nav{
+	display: flex;
+	list-style: none;
+	color: $gray;
+	justify-content: center;
+
+	a{
+		font-family: $secondary-font-family;
+		text-decoration: none;
+		color: $gray;
+		margin-right: 5px;
+		border:1px solid $brown;
+		border-radius: 3px;
+	}
+
+	li{
+		padding: 10px 25px;
+	}
+
+}
+
+.project-nav a:hover{
+	background: $brown;
+	color: $white
 }
 
 

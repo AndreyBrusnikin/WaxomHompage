@@ -261,11 +261,29 @@ q:after {
 }
 
 .image-bg {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("img/slide-mountain.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/slide-mountain.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
+}
+
+.header {
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.image-bg:after {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: #000;
+  z-index: 1;
+  opacity: 0.7;
 }
 
 .navbar {
@@ -792,6 +810,8 @@ h2 {
 
 .owl-carousel {
   margin-bottom: 30px;
+  position: relative;
+  z-index: 3;
 }
 
 @media (min-width: 576px) {
@@ -1039,4 +1059,45 @@ h4 {
   .footer-box-right p {
     font-size: 18px;
   }
+}
+
+.project-head {
+  text-align: center;
+}
+
+.project-head p {
+  font-size: 16px;
+  max-width: 760px;
+  text-align: center;
+  margin: 0 auto;
+  color: #8c8c8c;
+}
+
+.project-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  color: #8c8c8c;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.project-nav a {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: #8c8c8c;
+  margin-right: 5px;
+  border: 1px solid #998675;
+  border-radius: 3px;
+}
+
+.project-nav li {
+  padding: 10px 25px;
+}
+
+.project-nav a:hover {
+  background: #998675;
+  color: #ffffff;
 }
