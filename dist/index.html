@@ -13,11 +13,9 @@
     <link rel="stylesheet" href="style.min.css">
     <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="animate.min.css">
-    <link rel="stylesheet" href="jquery.flipster.min.css">
 
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/WOW.min.js"></script>
-    <script src="js/jquery.flipster.min.js"></script>
 </head>
 <body>
 <div id="wrapper">
@@ -32,7 +30,7 @@
                     <a href="#" class="logo"><img src="img/logo.png" alt="Logo"></a>
                     <div class="toggle-main" id="js-menu">
                         <ul class="main-nav" >
-                            <li><a hef="#" class="nav-links">Home</a></li>
+                            <li><a href="#" class="nav-links">Home</a></li>
                             <li><a href="#" class="nav-links">About-Us</a></li>
                             <li><a href="#" class="nav-links">Portfolio</a></li>
                             <li><a href="#" class="nav-links">Features</a></li>
@@ -42,11 +40,11 @@
                             <li><a href="#" class="nav-links">Contact</a></li>
                         </ul>
 
-                        <div class="right-nav">
+                        <ul class="right-nav">
                             <li><a href="#" class="ico-link"><i class="icon-bag"></i></a></li>
                             <li><a href="#" class="ico-link"><i id="toggle-search" class="icon-search"></i></a></li>
                             <input style="" id="searchBar" class="searchBar" name="search" type="search" placeholder="Search&hellip;"/>
-                        </div>
+                        </ul>
                     </div>
                 </nav>
             </div>
@@ -76,28 +74,28 @@
         <div class="container">
             <div class="common-section">
                 <div class="row">
-                    <div class="box-holder wow fadeInLeft col-12 col-sm-6 col-md-3">
+                    <div class="box-holder wow fadeInLeft col-12 col-sm-6 col-md-6 col-lg-3">
                         <a href="#" class="section-info">
                             <i class="icon-pencil"></i>
                             <h5>Web & App Design</h5>
                             <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
                         </a>
                     </div>
-                    <div class="box-holder wow fadeInLeft col-12 col-sm-6 col-md-3">
+                    <div class="box-holder wow fadeInLeft col-12 col-sm-6 col-md-6 col-lg-3">
                         <a href="#" class=" section-info">
                             <i class="icon-layers"></i>
                             <h5>Development</h5>
                             <p>Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
                         </a>
                     </div>
-                    <div class="box-holder wow fadeInRight col-12 col-sm-6 col-md-3">
+                    <div class="box-holder wow fadeInRight col-12 col-sm-6 col-md-6 col-lg-3">
                         <a href="#" class="section-info">
                             <i class="icon-settings"></i>
                             <h5>Customization</h5>
                             <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
                         </a>
                     </div>
-                    <div class="box-holder wow fadeInRight col-12 col-sm-6 col-md-3">
+                    <div class="box-holder wow fadeInRight col-12 col-sm-6 col-md-6 col-lg-3">
                         <a href="#" class="section-info">
                             <i class="icon-briefcase"></i>
                             <h5>Marketing</h5>
@@ -112,19 +110,27 @@
                 <div class="ideas-holder wow fadeInDown">
                     <h3>Waxom is Realizatiaon of your Ideas.</h3>
                     <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                    <img src="img/Ideas.png" alt="Ideas">
                 </div>
-                <div class="my-flipster">
-                    <ul>
-                        <li><img src="img/slide-prevew2.jpg" /></li>
-                        <li><img src="img/slide-prevew1.jpg" /></li>
-                        <li><img src="img/slide-prevew3.jpg" /></li>
-                    </ul>
-                </div>
+
+
             </div>
         </section>
         <div class="footer-box">
-
+            <div class="container">
+                <div class="footer-box-conetnt">
+                    <div class="footer-box-right">
+                        <h4><span>Waxom</span> Multipurpose WordPress Theme</h4>
+                        <p>Don't Forget to Rate the Template. Thanks so much!</p>
+                    </div>
+                    <div class="footer-box-button">
+                        <button type="button" class="button-pimary">PURCHASE NOW</button>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <h3>dasdsd</h3>
     </main>
     <footer class="footer">
         <div class="container">
@@ -133,10 +139,6 @@
     </footer>
 </div>
 <script>
-    $('.my-flipster').flipster({
-
-    });
-
     $('#toggle-search').on('click', function() {
         $('#searchBar').toggle('display: inline-block');
     });
@@ -169,8 +171,6 @@
     )
     wow.init();
 </script>
-<script src="js/vue-carousel-3d.min.js"></script>
-<script src="js/Vue.js"></script>
 <script async src="js/collapse.js"></script>
 </body>
 </html>
