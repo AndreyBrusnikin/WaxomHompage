@@ -141,15 +141,11 @@
   text-align: left;
   border-radius: 28px;
   outline:none;
+  display: none
 }
 
 @media screen and (min-width: 425px) {
   .searchBar{
     max-width: 130px;
   }
-}
-
-
-#toggle-search {
-
 }

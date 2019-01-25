@@ -8,9 +8,16 @@
     <title></title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Raleway:300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.theme.default.min.css">
     <link rel="stylesheet" href="style.min.css">
     <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="animate.min.css">
+    <link rel="stylesheet" href="jquery.flipster.min.css">
 
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/WOW.min.js"></script>
+    <script src="js/jquery.flipster.min.js"></script>
 </head>
 <body>
 <div id="wrapper">
@@ -38,37 +45,132 @@
                         <div class="right-nav">
                             <li><a href="#" class="ico-link"><i class="icon-bag"></i></a></li>
                             <li><a href="#" class="ico-link"><i id="toggle-search" class="icon-search"></i></a></li>
-                            <input style="display:none;" id="searchBar" class="searchBar" name="search" type="search" placeholder="Search&hellip;"/>
+                            <input style="" id="searchBar" class="searchBar" name="search" type="search" placeholder="Search&hellip;"/>
                         </div>
                     </div>
                 </nav>
             </div>
         </header>
         <div class="container">
-            <div class="slider-holder">
-                <div class="slider-content">
-                    <strong class="sider-info">Unique and Modern Design</strong>
-                    <h2>Portfolio PSD Template</h2>
-                    <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-                    <button type="button" class="button-pimary">GET STARTED</button>
+            <div class="owl-carousel owl-theme owl-loaded">
+                <div class="slider-holder">
+                    <div class="slider-content ">
+                        <strong class="sider-info">Unique and Modern Design</strong>
+                        <h2>Portfolio PSD Template</h2>
+                        <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+                        <button type="button" class="button-pimary">GET STARTED</button>
+                    </div>
+                </div>
+                <div class="slider-holder">
+                    <div class="slider-content ">
+                        <strong class="sider-info">Soluta nobis eleifend option</strong>
+                        <h2>Template Portfolio PSD </h2>
+                        <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+                        <button type="button" class="button-pimary">GET STARTED</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <main class="main">
         <div class="container">
+            <div class="common-section">
+                <div class="row">
+                    <div class="box-holder wow fadeInLeft col-12 col-sm-6 col-md-3">
+                        <a href="#" class="section-info">
+                            <i class="icon-pencil"></i>
+                            <h5>Web & App Design</h5>
+                            <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+                        </a>
+                    </div>
+                    <div class="box-holder wow fadeInLeft col-12 col-sm-6 col-md-3">
+                        <a href="#" class=" section-info">
+                            <i class="icon-layers"></i>
+                            <h5>Development</h5>
+                            <p>Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+                        </a>
+                    </div>
+                    <div class="box-holder wow fadeInRight col-12 col-sm-6 col-md-3">
+                        <a href="#" class="section-info">
+                            <i class="icon-settings"></i>
+                            <h5>Customization</h5>
+                            <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+                        </a>
+                    </div>
+                    <div class="box-holder wow fadeInRight col-12 col-sm-6 col-md-3">
+                        <a href="#" class="section-info">
+                            <i class="icon-briefcase"></i>
+                            <h5>Marketing</h5>
+                            <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="section-ideas">
+            <div class="container">
+                <div class="ideas-holder wow fadeInDown">
+                    <h3>Waxom is Realizatiaon of your Ideas.</h3>
+                    <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                </div>
+                <div class="my-flipster">
+                    <ul>
+                        <li><img src="img/slide-prevew2.jpg" /></li>
+                        <li><img src="img/slide-prevew1.jpg" /></li>
+                        <li><img src="img/slide-prevew3.jpg" /></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="footer-box">
+
         </div>
     </main>
     <footer class="footer">
         <div class="container">
+
         </div>
     </footer>
 </div>
 <script>
+    $('.my-flipster').flipster({
+
+    });
+
     $('#toggle-search').on('click', function() {
         $('#searchBar').toggle('display: inline-block');
     });
+
+    $(document).ready(function(){
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:0,
+            nav:false,
+            responsive:{
+                0:{
+                    items:1
+                },
+                768:{
+                    items:1,
+                    nav: true
+                }
+            }
+        })
+    });
+
+    wow = new WOW(
+        {
+            boxClass:     'wow',      // default
+            animateClass: 'animated', // default
+            offset:       0,          // default
+            mobile:       false,       // default
+            live:         true        // default
+        }
+    )
+    wow.init();
 </script>
+<script src="js/vue-carousel-3d.min.js"></script>
+<script src="js/Vue.js"></script>
 <script async src="js/collapse.js"></script>
 </body>
 </html>
