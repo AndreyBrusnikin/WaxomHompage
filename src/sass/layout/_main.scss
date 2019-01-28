@@ -75,13 +75,13 @@ body {
 .slider-holder{
 	display: flex;
 	justify-content: center;
-	margin-top: 75px;
+	margin-top: 140px;
 
 }
 
 .slider-content{
 	text-align: center;
-	margin-bottom: 80px;
+	margin-bottom: 45px;
 
 	p{
 		max-width: 562px;
@@ -424,10 +424,11 @@ h4{
 
 .project-head{
 	text-align: center;
+	margin-bottom: 15px;
 
 	p{
 		
-		font-size: 16px;
+		font-size: 12px;
 		max-width: 760px;
 		text-align: center;
 		margin: 0 auto;
@@ -435,25 +436,73 @@ h4{
 	}
 }
 
+@media (min-width: 768px){
+	.project-head{
+		margin-bottom: 30px;
+		p{
+			font-size: 14px;
+
+		}
+	}
+}
+
+@media (min-width: 1024px){
+	.project-head{
+		margin-bottom: 50px;
+		p{
+			font-size: 16px;
+		}
+	}
+}
+
+
 .project-nav{
 	display: flex;
+	flex-wrap: wrap;
 	list-style: none;
 	color: $gray;
 	justify-content: center;
 
 	a{
 		font-family: $secondary-font-family;
+		font-size: 12px;
 		text-decoration: none;
 		color: $gray;
-		margin-right: 5px;
+		margin: 3px 0 3px 10px;
 		border:1px solid $brown;
 		border-radius: 3px;
 	}
 
 	li{
-		padding: 10px 25px;
+		padding: 5px 10px;
 	}
 
+}
+
+@media (min-width: 768px){
+	.project-nav {
+		a {
+			font-size: 14px;
+		}
+
+		li {
+			padding: 7px 15px;
+		}
+	}
+
+}
+
+@media (min-width: 1024px){
+	.project-nav {
+	a{
+		font-size: 14px;
+	}
+
+	li{
+		padding: 10px 20px;
+	}
+
+}
 }
 
 .project-nav a:hover{
@@ -461,5 +510,73 @@ h4{
 	color: $white
 }
 
+.project-img{
+	width: 100%;
+
+}
+
+.project-box{
+	padding: 0 15px 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.project-box-text{
+
+	padding: 30px 0 0 28px;
+	background-color: $gray-light;
+	position: relative;
+
+	p{
+		font-family: $secondary-font-family;
+		line-height: 1.43;
+		font-weight: 300;
+		color: #d1d1d1;
+		padding-bottom: 27px;
+	}
+
+	h6{
+		font-size: 18px;
+		font-weight: 300;
+		color: $brown-light;
+	}
+
+	&:after{
+		content:"";
+		width: 20px;
+		height: 20px;
+		background-color: $gray-light;
+		position: absolute;
+		top: -8px;
+		transform: rotate(45deg);
+	}
+}
 
 
+.project-box:hover{
+
+
+	.project-box-text{
+		background-color: $brown-dark;
+
+		p{
+			color: $brown-light;
+		}
+
+		h6{
+
+			color: $white;
+		}
+
+		&:after{
+			content:"";
+			width: 20px;
+			height: 20px;
+			background-color: $brown-dark;
+			position: absolute;
+			top: -8px;
+			transform: rotate(45deg);
+		}
+	}
+}
