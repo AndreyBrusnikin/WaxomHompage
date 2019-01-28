@@ -13,15 +13,12 @@
     <link rel="stylesheet" href="style.min.css">
     <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="animate.min.css">
-
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/WOW.min.js"></script>
 </head>
 <body>
 <div id="wrapper">
-      <header class="header">
+      <header class="header" id="toggle-bg">
             <div class="container">
-                <nav class="navbar">
+                <nav class="navbar" >
                     <span class="navbar-toggle" id="js-navbar-toggle">
                                 <i class="icon-menu" id="icon-toggle-menu"></i>
                                 <i class="icon-close" id="icon-toggle-close"></i>
@@ -130,7 +127,6 @@
                 </div>
             </div>
         </div>
-
         <section class="projects">
             <div class="container">
                 <div class="project-head">
@@ -144,26 +140,50 @@
                         <a href="#"><li>Photography</li></a>
                     </ul>
                 </div>
-                <div class="project-holder">
-                    <div class="row">
+                <div class="project-holder row ">
                         <div class="project-box col-12 col-sm-12 col-md-6 col-lg-4">
-                            <img src="img/1/project1.jpg" alt="">
+                            <div class="projext">
+                            <img class="project-img" src="img/1/project1.jpg" alt="">
+                            </div>
+                            <div class="project-box-text">
+                                <h6>Claritas Etiam Processus</h6>
+                                <p>Photography, Nature</p>
+                            </div>
                         </div>
                         <div class="project-box col-12 col-sm-12 col-md-6 col-lg-4">
-                            <img src="img/1/project2.jpg" alt="">
+                            <img class="project-img" src="img/1/project2.jpg" alt="">
+                            <div class="project-box-text">
+                                <h6>Quam Nutamus Farum</h6>
+                                <p>Graphic Design, Mock-Up</p>
+                            </div>
                         </div>
                         <div class="project-box col-12 col-sm-12 col-md-6 col-lg-4">
-                            <img src="img/1/project3.jpg" alt="">
+                            <img class="project-img" src="img/1/project3.jpg" alt="">
+                            <div class="project-box-text">
+                                <h6>Usus Legentis Videntur</h6>
+                                <p>Photography, Holiday</p>
+                            </div>
                         </div>
                         <div class="project-box col-12 col-sm-12 col-md-6 col-lg-4">
-                            <img src="img/1/project4.jpg" alt="">
+                            <img class="project-img" src="img/1/project4.jpg" alt="">
+                            <div class="project-box-text">
+                                <h6>Claritas Etiam Processus</h6>
+                                <p>Photography, Nature</p>
+                            </div>
                         </div>
                         <div class="project-box col-12 col-sm-12 col-md-6 col-lg-4">
-                            <img src="img/1/project5.jpg" alt="">
+                            <img class="project-img" src="img/1/project5.jpg" alt="">
+                            <div class="project-box-text">
+                                <h6>Claritas Etiam Processus</h6>
+                                <p>Graphic Design, Mock-Up</p>
+                            </div>
                         </div>
                         <div class="project-box col-12 col-sm-12 col-md-6 col-lg-4">
-                            <img src="img/1/project6.jpg" alt="">
-                        </div>
+                            <img class="project-img" src="img/1/project6.jpg" alt="">
+                            <div class="project-box-text">
+                                <h6>Claritas Etiam Processus</h6>
+                                <p>Photography, Holiday</p>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -175,39 +195,9 @@
         </div>
     </footer>
 </div>
-<script>
-    $('#toggle-search').on('click', function() {
-        $('#searchBar').toggle('display: inline-block');
-    });
-
-    $(document).ready(function(){
-        $('.owl-carousel').owlCarousel({
-            loop:true,
-            margin:0,
-            nav:false,
-            responsive:{
-                0:{
-                    items:1
-                },
-                768:{
-                    items:1,
-                    nav: true
-                }
-            }
-        })
-    });
-
-    wow = new WOW(
-        {
-            boxClass:     'wow',      // default
-            animateClass: 'animated', // default
-            offset:       0,          // default
-            mobile:       false,       // default
-            live:         true        // default
-        }
-    )
-    wow.init();
-</script>
-<script async src="js/collapse.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/WOW.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/collapse.js"></script>
 </body>
 </html>
