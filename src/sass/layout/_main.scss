@@ -462,6 +462,7 @@ h4{
 	list-style: none;
 	color: $gray;
 	justify-content: center;
+	padding: 0;
 
 	a{
 		font-family: $secondary-font-family;
@@ -507,19 +508,68 @@ h4{
 
 .project-nav a:hover{
 	background: $brown;
-	color: $white
+	color: $white;
+
 }
 
-.project-img{
+.project-img {
 	width: 100%;
+	height: 100%;
+	position: relative;
+
+	img{
+		width: 100%;
+	}
 
 }
+
+.icon-holder{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+
+}
+
+
+.project-link1 {
+	margin: 10px;
+	position: absolute;
+	top: 45%;
+	right: 40%;
+	text-decoration: none;
+	color: $white;
+	font-size: 20px;
+	&:hover{
+		color: $brown
+	}
+}
+
+.project-link2 {
+	margin: 10px;
+	position: absolute;
+	top: 45%;
+	right: 50%;
+	text-decoration: none;
+	color: $white;
+	font-size: 20px;
+	&:hover{
+		color: $brown
+	}
+}
+
 
 .project-box{
 	padding: 0 15px 15px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+
 }
 
 .project-box-text{
@@ -556,9 +606,16 @@ h4{
 
 .project-box:hover{
 
+	.project-img .icon-holder{
+
+		opacity: 1;
+		background: rgba(0,0,0,0.7	);
+		cursor: pointer;
+	}
 
 	.project-box-text{
 		background-color: $brown-dark;
+		transition: .5s ease;
 
 		p{
 			color: $brown-light;
@@ -577,6 +634,7 @@ h4{
 			position: absolute;
 			top: -8px;
 			transform: rotate(45deg);
+			transition: .5s ease;
 		}
 	}
 }
