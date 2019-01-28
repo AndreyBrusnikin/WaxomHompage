@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title></title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://isotope.metafizzy.co/v1/jquery.isotope.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Raleway:300,400,500,600,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="owl.carousel.min.css">
     <link rel="stylesheet" href="owl.theme.default.min.css">
@@ -132,20 +133,20 @@
                 <div class="project-head">
                     <h3>Our Latest Projects.</h3>
                     <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-                    <ul class="project-nav">
-                        <a href="#"><li>All</li></a>
-                        <a href="#"><li>Web Design</li></a>
-                        <a href="#"><li>Mobile App</li></a>
-                        <a href="#"><li>Ilustration</li></a>
-                        <a href="#"><li>Photography</li></a>
+                    <ul class="project-nav portfolioFilter">
+                        <a href="#" data-filter="*" class="current"><li>All</li></a>
+                        <a href="#" data-filter=".webTemplates"><li>Web Design</li></a>
+                        <a href="#" data-filter=".mobile"><li>Mobile App</li></a>
+                        <a href="#" data-filter=".illustration"><li>Ilustration</li></a>
+                        <a href="#" data-filter=".photo"><li>Photography</li></a>
                     </ul>
                 </div>
-                <div class="project-holder row ">
-                        <div class="project-box col-12 col-sm-12 col-md-6 col-lg-4">
+                <div class="portfolioContainer project-holder row ">
+                        <div class="photo project-box col-12 col-sm-12 col-md-6 col-lg-4">
                             <div class="project-img">
                                 <img  src="img/1/project1.jpg" alt="">
                                     <p class="icon-holder">
-                                        <a class="project-link1" href="#"><i class="icon-link"></i></a>
+                                        <a class="project-link1" href="#"><i class="icon-search-link"></i></a>
                                         <a class="project-link2" href="#"><i class="icon-link"></i></a>
                                     </p>
                             </div>
@@ -154,11 +155,11 @@
                                 <p>Photography, Nature</p>
                             </div>
                         </div>
-                        <div class="project-box col-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class="webTemplates project-box col-12 col-sm-12 col-md-6 col-lg-4">
                             <div class="project-img">
                                 <img  src="img/1/project2.jpg" alt="">
                                 <p class="icon-holder">
-                                    <a class="project-link1" href="#"><i class="icon-link"></i></a>
+                                    <a class="project-link1" href="#"><i class="icon-search-link"></i></a>
                                     <a class="project-link2" href="#"><i class="icon-link"></i></a>
                                 </p>
                             </div>
@@ -167,11 +168,11 @@
                                 <p>Graphic Design, Mock-Up</p>
                             </div>
                         </div>
-                        <div class="project-box col-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class="webTemplates project-box col-12 col-sm-12 col-md-6 col-lg-4">
                             <div class="project-img">
                                 <img  src="img/1/project3.jpg" alt="">
                                 <p class="icon-holder">
-                                    <a class="project-link1" href="#"><i class="icon-link"></i></a>
+                                    <a class="project-link1" href="#"><i class="icon-search-link"></i></a>
                                     <a class="project-link2" href="#"><i class="icon-link"></i></a>
                                 </p>
                             </div>
@@ -180,11 +181,11 @@
                                 <p>Photography, Holiday</p>
                             </div>
                         </div>
-                        <div class="project-box col-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class="photo project-box col-12 col-sm-12 col-md-6 col-lg-4">
                             <div class="project-img">
                                 <img  src="img/1/project4.jpg" alt="">
                                 <p class="icon-holder">
-                                    <a class="project-link1" href="#"><i class="icon-link"></i></a>
+                                    <a class="project-link1" href="#"><i class="icon-search-link"></i></a>
                                     <a class="project-link2" href="#"><i class="icon-link"></i></a>
                                 </p>
                             </div>
@@ -193,11 +194,11 @@
                                 <p>Photography, Nature</p>
                             </div>
                         </div>
-                        <div class="project-box col-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class="illustration project-box col-12 col-sm-12 col-md-6 col-lg-4">
                             <div class="project-img">
                                 <img  src="img/1/project5.jpg" alt="">
                                 <p class="icon-holder">
-                                    <a class="project-link1" href="#"><i class="icon-link"></i></a>
+                                    <a class="project-link1" href="#"><i class="icon-search-link"></i></a>
                                     <a class="project-link2" href="#"><i class="icon-link"></i></a>
                                 </p>
                             </div>
@@ -206,11 +207,11 @@
                                 <p>Graphic Design, Mock-Up</p>
                             </div>
                         </div>
-                        <div class="project-box col-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class="mobile project-box col-12 col-sm-12 col-md-6 col-lg-4">
                             <div class="project-img">
                                 <img  src="img/1/project6.jpg" alt="">
                                 <p class="icon-holder">
-                                    <a class="project-link1" href="#"><i class="icon-link"></i></a>
+                                    <a class="project-link1" href="#"><i class="icon-search-link"></i></a>
                                     <a class="project-link2" href="#"><i class="icon-link"></i></a>
                                 </p>
                             </div>
@@ -229,6 +230,7 @@
         </div>
     </footer>
 </div>
+
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/WOW.min.js"></script>
 <script src="js/script.js"></script>

@@ -472,6 +472,10 @@ h4{
 		margin: 3px 0 3px 10px;
 		border:1px solid $brown;
 		border-radius: 3px;
+
+		&:focus {
+			outline: none;
+		}
 	}
 
 	li{
@@ -546,7 +550,7 @@ h4{
 	color: $white;
 	font-size: 20px;
 	&:hover{
-		color: $brown
+		color: $brown-light;
 	}
 }
 
@@ -559,7 +563,7 @@ h4{
 	color: $white;
 	font-size: 20px;
 	&:hover{
-		color: $brown
+		color: $brown-light;
 	}
 }
 
@@ -637,4 +641,33 @@ h4{
 			transition: .5s ease;
 		}
 	}
+}
+
+.isotope-item {
+	z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+	pointer-events: none;
+	z-index: 1;
+}
+
+.isotope,
+.isotope .isotope-item {
+	/* change duration value to whatever you like */
+	-webkit-transition-duration: 0.8s;
+	-moz-transition-duration: 0.8s;
+	transition-duration: 0.8s;
+}
+
+.isotope {
+	-webkit-transition-property: height, width;
+	-moz-transition-property: height, width;
+	transition-property: height, width;
+}
+
+.isotope .isotope-item {
+	-webkit-transition-property: -webkit-transform, opacity;
+	-moz-transition-property: -moz-transform, opacity;
+	transition-property: transform, opacity;
 }

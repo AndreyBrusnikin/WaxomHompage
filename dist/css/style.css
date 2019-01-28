@@ -1122,6 +1122,10 @@ h4 {
   border-radius: 3px;
 }
 
+.project-nav a:focus {
+  outline: none;
+}
+
 .project-nav li {
   padding: 5px 10px;
 }
@@ -1185,7 +1189,7 @@ h4 {
 }
 
 .project-link1:hover {
-  color: #998675;
+  color: #c7b299;
 }
 
 .project-link2 {
@@ -1199,7 +1203,7 @@ h4 {
 }
 
 .project-link2:hover {
-  color: #998675;
+  color: #c7b299;
 }
 
 .project-box {
@@ -1278,4 +1282,33 @@ h4 {
   transform: rotate(45deg);
   -webkit-transition: .5s ease;
   transition: .5s ease;
+}
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+  -webkit-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+  transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
 }
