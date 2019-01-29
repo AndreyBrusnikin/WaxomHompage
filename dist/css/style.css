@@ -1322,15 +1322,40 @@ h4 {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin: 40px 0 80px;
+  margin: 15px 0;
 }
 
-.flex {
-  min-height: 30vh;
+@media (min-width: 768px) {
+  .btn-load {
+    margin: 30px 0 60px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .btn-load {
+    margin: 40px 0 80px;
+  }
+}
+
+.video-section {
+  min-height: 20vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .video-section {
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .video-section {
+    padding-bottom: 80px;
+  }
 }
 
 .header-video {
@@ -1341,8 +1366,8 @@ h4 {
   overflow: hidden;
 }
 
-@media (min-width: 768px) {
-  .flex {
+@media (min-width: 567px) {
+  .video-section {
     min-height: 40vh;
   }
 
@@ -1367,15 +1392,15 @@ h4 {
 
 .play-holder {
   position: absolute;
-  top: 30%;
-  left: 20%;
-  right: 20%;
+  top: 5%;
+  left: 5%;
+  right: 5%;
   text-align: center;
 }
 
 .play-holder a {
   color: #ffffff;
-  font-size: 50px;
+  font-size: 40px;
   cursor: pointer;
   text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.9);
 }
@@ -1383,30 +1408,113 @@ h4 {
 .play-holder h3 {
   color: #ffffff;
   font-weight: 500;
-  font-size: 25px;
+  font-size: 15px;
   text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.9);
 }
 
 .play-holder p {
-  font-size: 14px;
+  font-size: 12px;
   color: #ffffff;
-  max-width: 550px;
   font-weight: 300;
-  line-height: 1.75;
+  line-height: 1.2;
   margin: 0 auto;
   text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.9);
 }
 
 @media (min-width: 768px) {
+  .play-holder {
+    top: 25%;
+  }
+
+  .play-holder a {
+    font-size: 60px;
+  }
+
   .play-holder h3 {
     font-size: 30px;
   }
 
   .play-holder p {
     font-size: 16px;
+    max-width: 550px;
+    line-height: 1.75;
   }
 }
 
 .icon-pause {
   opacity: 0.3;
+}
+
+.mobile-holder {
+  padding: 0 15px;
+}
+
+.devices-title h3 {
+  text-align: center;
+}
+
+.devices-title p {
+  color: #8c8c8c;
+  font-size: 12px;
+  max-width: 670px;
+  font-weight: 300;
+  line-height: 1.75;
+  font-family: "Montserrat", sans-serif;
+}
+
+.device-info {
+  color: #8c8c8c;
+  font-size: 12px;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.7;
+  padding-left: 10px;
+  list-style: none;
+}
+
+.device-img {
+  text-align: center;
+}
+
+.icon-right {
+  color: #c7b299;
+  padding-right: 5px;
+}
+
+@media (min-width: 768px) {
+  .device-img {
+    text-align: end;
+  }
+
+  .devices-title h3 {
+    text-align: left;
+  }
+
+  .devices-title p {
+    font-size: 13px;
+  }
+
+  .device-info {
+    font-size: 15px;
+    padding-left: 30px;
+  }
+
+  .icon-right {
+    padding-right: 13px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .devices-title p {
+    font-size: 15px;
+  }
+
+  .icon-right {
+    padding-right: 15px;
+  }
+
+  .device-info {
+    line-height: 2;
+    padding-left: 40px;
+  }
 }
