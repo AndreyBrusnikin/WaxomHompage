@@ -90,12 +90,17 @@ $(function() {
             $(this).removeClass('stopped');
             $("#videotitle").hide();
             $("#videodescription").hide();
+            $("#playback").removeClass('icon-play');
+            $("#playback").addClass('icon-pause');
 
         } else {
             $('iframe').vimeo('pause');
             $(this).addClass('stopped');
             $("#videotitle").show();
             $("#videodescription").show();
+            $("#playback").removeClass('icon-pause');
+            $("#playback").addClass('icon-play');
+
 
         }
     });
