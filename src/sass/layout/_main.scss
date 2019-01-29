@@ -62,6 +62,9 @@ body {
 	background-color: $brown;
 	box-shadow: inset 0px -3px 0 0 #736357;
 	border: 2px solid transparent;
+	&:focus {
+		outline: none;
+	}
 
 }
 
@@ -654,20 +657,100 @@ h4{
 
 .isotope,
 .isotope .isotope-item {
-	/* change duration value to whatever you like */
-	-webkit-transition-duration: 0.8s;
-	-moz-transition-duration: 0.8s;
 	transition-duration: 0.8s;
 }
 
 .isotope {
-	-webkit-transition-property: height, width;
-	-moz-transition-property: height, width;
 	transition-property: height, width;
 }
 
 .isotope .isotope-item {
-	-webkit-transition-property: -webkit-transform, opacity;
-	-moz-transition-property: -moz-transform, opacity;
 	transition-property: transform, opacity;
+}
+
+.btn-load{
+	display: flex;
+	justify-content: center;
+	margin: 40px 0 80px;
+}
+
+.flex {
+	min-height: 30vh;
+	flex-direction: column;
+}
+.header-video {
+	position: relative;
+	height: 30vh;
+	width: 100%;
+	opacity: 0;
+	overflow: hidden;
+}
+
+@media (min-width: 768px){
+	.flex {
+		min-height: 40vh;
+	}
+	.header-video {
+		height: 40vh;
+	}
+
+}
+
+
+.header-video iframe {
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	position: absolute;
+	height: calc(100vw * 0.5625);
+}
+
+.play-holder {
+	position: absolute;
+	top: 30%;
+	left: 20%;
+	right:20%;
+	text-align: center;
+
+
+	a{
+		color: $white;
+		font-size: 50px;
+		cursor: pointer;
+		text-shadow: 2px 1px 1px rgba(0,0,0,0.9);
+
+	}
+
+	h3 {
+		color: $white;
+		font-weight: 500;
+		font-size: 25px;
+		text-shadow: 2px 1px 1px rgba(0,0,0,0.9);
+
+	}
+	p {
+		font-size: 14px;
+		color: $white;
+		max-width: 550px;
+		font-weight: 300;
+		line-height: 1.75;
+		margin: 0 auto;
+		text-shadow: 2px 1px 1px rgba(0,0,0,0.9);
+
+	}
+}
+
+@media (min-width: 768px){
+	.play-holder {
+		h3 {
+			font-size: 30px;
+		}
+		p {
+			font-size: 16px;
+		}
+	}
+
 }
