@@ -3,7 +3,7 @@ $('#toggle-search').on('click', function() {
 });
 
 $(document).ready(function(){
-    $('.owl-carousel').owlCarousel({
+    $('#owlcarousel1').owlCarousel({
         loop:true,
         margin:0,
         nav:false,
@@ -105,4 +105,11 @@ $(function() {
         }
     });
 
+});
+
+jQuery(document).ready(function () {
+    $('.counter').counterUp({
+        delay: 10,
+        time: 1000
+    });
 });
