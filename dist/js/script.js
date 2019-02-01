@@ -19,6 +19,27 @@ $(document).ready(function(){
     })
 });
 
+$(document).ready(function(){
+    $('#owlcarousel2').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:false,
+        responsive:{
+            0:{
+                items:1
+            },
+            568:{
+                items:2
+
+            },
+            1024:{
+                items:3
+            }
+        }
+    })
+});
+
+
 wow = new WOW(
     {
         boxClass:     'wow',      // default
@@ -92,6 +113,9 @@ $(function() {
             $("#videodescription").hide();
             $("#playback").removeClass('icon-play');
             $("#playback").addClass('icon-pause');
+            $(".play-holder").css(
+                {'background': 'rgba(0,0,0,0.0)'}
+            );
 
         } else {
             $('iframe').vimeo('pause');
@@ -100,6 +124,9 @@ $(function() {
             $("#videodescription").show();
             $("#playback").removeClass('icon-pause');
             $("#playback").addClass('icon-play');
+            $(".play-holder").css(
+                {'background': 'rgba(0,0,0,0.5)'}
+            );
 
 
         }
@@ -107,9 +134,4 @@ $(function() {
 
 });
 
-jQuery(document).ready(function () {
-    $('.counter').counterUp({
-        delay: 10,
-        time: 1000
-    });
-});
+
