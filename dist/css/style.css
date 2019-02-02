@@ -607,6 +607,10 @@ q:after {
   padding-bottom: 20px;
 }
 
+.footer-content ul {
+  padding: 0;
+}
+
 .footer-content li {
   font-family: "Montserrat", sans-serif;
   font-size: 13px;
@@ -619,6 +623,11 @@ q:after {
 
 .footer-content li:last-child {
   border: none;
+  padding-right: 0;
+}
+
+.footer-content li:first-child {
+  padding-left: 0;
 }
 
 .footer-content li b {

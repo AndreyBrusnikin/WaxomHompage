@@ -143,8 +143,9 @@
 
 .footer-content{
   padding-bottom: 20px;
-
-
+  ul{
+    padding: 0;
+  }
   li{
     font-family: $secondary-font-family;
     font-size: 13px;
@@ -156,6 +157,10 @@
 
     &:last-child{
       border: none;
+      padding-right: 0;
+    }
+    &:first-child{
+      padding-left: 0;
     }
     b{
       color: #959595;
