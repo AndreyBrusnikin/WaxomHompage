@@ -2,99 +2,98 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title></title>
+    <title>Waxom</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://isotope.metafizzy.co/v1/jquery.isotope.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Raleway:300,400,500,600,700,800,900" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/jrue/Vimeo-jQuery-API/master/dist/jquery.vimeo.api.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,600|Raleway:300,400,500,600,800" rel="stylesheet">
     <link rel="stylesheet" href="owl.carousel.min.css">
     <link rel="stylesheet" href="owl.theme.default.min.css">
     <link rel="stylesheet" href="style.min.css">
     <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="animate.min.css">
+    <script src="js/isotope.pkgd.min.js"></script>
 </head>
 <body>
 <div id="wrapper">
-      <header class="header" id="toggle-bg">
-            <div class="container">
-                <nav class="navbar" >
+    <header class="header" id="toggle-bg">
+        <div class="container">
+            <nav class="navbar" >
                     <span class="navbar-toggle" id="js-navbar-toggle">
                                 <i class="icon-menu" id="icon-toggle-menu"></i>
                                 <i class="icon-close" id="icon-toggle-close"></i>
                     </span>
-                    <a href="#" class="logo"><img src="img/logo.png" alt="Logo"></a>
-                    <div class="toggle-main" id="js-menu">
-                        <ul class="main-nav" >
-                            <li><a href="#" class="nav-links">Home</a></li>
-                            <li><a href="#" class="nav-links">About-Us</a></li>
-                            <li><a href="#" class="nav-links">Portfolio</a></li>
-                            <li><a href="#" class="nav-links">Features</a></li>
-                            <li><a href="#" class="nav-links">Blog</a></li>
-                            <li><a href="#" class="nav-links">Pricing</a></li>
-                            <li><a href="#" class="nav-links">Shortcodes</a></li>
-                            <li><a href="#" class="nav-links">Contact</a></li>
-                        </ul>
+                <a href="#" class="logo"><img src="img/logo.png" alt="Waxom Homapage"></a>
+                <div class="toggle-main" id="js-menu">
+                    <ul class="main-nav" >
+                        <li><a href="#" class="nav-links">Home</a></li>
+                        <li><a href="#" class="nav-links">About-Us</a></li>
+                        <li><a href="#" class="nav-links">Portfolio</a></li>
+                        <li><a href="#" class="nav-links">Features</a></li>
+                        <li><a href="#" class="nav-links">Blog</a></li>
+                        <li><a href="#" class="nav-links">Pricing</a></li>
+                        <li><a href="#" class="nav-links">Shortcodes</a></li>
+                        <li><a href="#" class="nav-links">Contact</a></li>
+                    </ul>
 
-                        <ul class="right-nav">
-                            <li><a href="#" class="ico-link"><i class="icon-bag"></i></a></li>
-                            <li><a href="#" class="ico-link"><i id="toggle-search" class="icon-search"></i></a></li>
-                            <input style="" id="searchBar" class="searchBar" name="search" type="search" placeholder="Search&hellip;"/>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </header>
-    <main class="main">
-        <div class="image-bg" style="background: url(img/slide-mountain.jpg)">
-      
-        <div class="container">
-            <div class="owl-carousel owl-theme owl-loaded">
-                <div class="slider-holder">
-                    <div class="slider-content ">
-                        <strong class="sider-info">Unique and Modern Design</strong>
-                        <h2>Portfolio PSD Template</h2>
-                        <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-                        <button type="button" class="button-pimary">GET STARTED</button>
-                    </div>
+                    <ul class="right-nav">
+                        <li><a href="#" class="ico-link"><i class="icon-bag"></i></a></li>
+                        <li><a href="#" class="ico-link"><i id="toggle-search" class="icon-search"></i></a></li>
+                        <input style="" id="searchBar" class="searchBar" name="search" type="search" placeholder="Search&hellip;"/>
+                    </ul>
                 </div>
-                <div class="slider-holder">
-                    <div class="slider-content ">
-                        <strong class="sider-info">Soluta nobis eleifend option</strong>
-                        <h2>Template Portfolio PSD </h2>
-                        <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-                        <button type="button" class="button-pimary">GET STARTED</button>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="image-bg" style="background-image: url(img/slide-mountain.jpg)">
+            <div class="container">
+                <div class="owl-carousel owl-theme owl-loaded" id="owlcarousel1">
+                    <div class="slider-holder">
+                        <div class="slider-content ">
+                            <strong class="sider-info">Unique and Modern Design</strong>
+                            <h2>Portfolio PSD Template</h2>
+                            <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+                            <button type="button" class="button-pimary">GET STARTED</button>
+                        </div>
+                    </div>
+                    <div class="slider-holder">
+                        <div class="slider-content ">
+                            <strong class="sider-info">Soluta nobis eleifend option</strong>
+                            <h2>Template Portfolio PSD </h2>
+                            <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+                            <button type="button" class="button-pimary">GET STARTED</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
         <div class="container">
             <div class="common-section">
                 <div class="row">
-                    <div class="box-holder wow fadeInLeft col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="box-holder wow zoomInLeft col-12 col-sm-6 col-md-6 col-lg-3">
                         <a href="#" class="section-info">
                             <i class="icon-pencil"></i>
                             <h5>Web & App Design</h5>
                             <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
                         </a>
                     </div>
-                    <div class="box-holder wow fadeInLeft col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="box-holder wow zoomInLeft col-12 col-sm-6 col-md-6 col-lg-3">
                         <a href="#" class=" section-info">
                             <i class="icon-layers"></i>
                             <h5>Development</h5>
                             <p>Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
                         </a>
                     </div>
-                    <div class="box-holder wow fadeInRight col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="box-holder wow zoomInRight col-12 col-sm-6 col-md-6 col-lg-3">
                         <a href="#" class="section-info">
                             <i class="icon-settings"></i>
                             <h5>Customization</h5>
                             <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
                         </a>
                     </div>
-                    <div class="box-holder wow fadeInRight col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="box-holder wow zoomInRight col-12 col-sm-6 col-md-6 col-lg-3">
                         <a href="#" class="section-info">
                             <i class="icon-briefcase"></i>
                             <h5>Marketing</h5>
@@ -106,23 +105,21 @@
         </div>
         <section class="section-ideas">
             <div class="container">
-                <div class="ideas-holder wow fadeInDown">
+                <div class="ideas-holder wow zoomIn">
                     <h3>Waxom is Realizatiaon of your Ideas.</h3>
                     <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
                     <img src="img/Ideas.png" alt="Ideas">
                 </div>
-
-
             </div>
         </section>
-        <div class="footer-box">
+        <div class="propouse-section ">
             <div class="container">
-                <div class="footer-box-conetnt">
-                    <div class="footer-box-right">
+                <div class="propouse-section-conetnt wow zoomIn">
+                    <div class="propouse-section-right">
                         <h4><span>Waxom</span> Multipurpose WordPress Theme</h4>
                         <p>Don't Forget to Rate the Template. Thanks so much!</p>
                     </div>
-                    <div class="footer-box-button">
+                    <div class="propouse-section-button">
                         <button type="button" class="button-pimary">PURCHASE NOW</button>
                     </div>
                 </div>
@@ -130,110 +127,429 @@
         </div>
         <section class="projects">
             <div class="container">
-                <div class="project-head">
+                <div class="project-head  ">
                     <h3>Our Latest Projects.</h3>
                     <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
                     <ul class="project-nav portfolioFilter">
-                        <a href="#" data-filter="*" class="current"><li>All</li></a>
-                        <a href="#" data-filter=".webTemplates"><li>Web Design</li></a>
-                        <a href="#" data-filter=".mobile"><li>Mobile App</li></a>
-                        <a href="#" data-filter=".illustration"><li>Ilustration</li></a>
-                        <a href="#" data-filter=".photo"><li>Photography</li></a>
+                        <li><a href="#" data-filter="*" class="current">All</a></li>
+                        <li><a href="#" data-filter=".webTemplates">Web Design</a></li>
+                        <li><a href="#" data-filter=".mobile">Mobile App</a></li>
+                        <li><a href="#" data-filter=".illustration">Ilustration</a></li>
+                        <li><a href="#" data-filter=".photo">Photography</a></li>
                     </ul>
                 </div>
                 <div class="portfolioContainer project-holder row ">
-                        <div class="photo project-box col-12 col-sm-12 col-md-6 col-lg-4">
-                            <div class="project-img">
-                                <img  src="img/1/project1.jpg" alt="">
-                                    <p class="icon-holder">
-                                        <a class="project-link1" href="#"><i class="icon-search-link"></i></a>
-                                        <a class="project-link2" href="#"><i class="icon-link"></i></a>
-                                    </p>
-                            </div>
-                            <div class="project-box-text">
-                                <h6>Claritas Etiam Processus</h6>
-                                <p>Photography, Nature</p>
+                    <div class="photo project-box col-12 col-sm-6 col-md-4">
+                        <div class="project-img">
+                            <img  src="img/project1.jpg" alt="Project1">
+                            <p class="icon-holder">
+                                <a class="project-link1" href="#"><i class="icon-search-link"></i></a>
+                                <a class="project-link2" href="#"><i class="icon-link"></i></a>
+                            </p>
+                        </div>
+                        <div class="project-box-text">
+                            <h6>Claritas Etiam Processus</h6>
+                            <p>Photography, Nature</p>
+                        </div>
+                    </div>
+                    <div class="webTemplates project-box col-12 col-sm-6 col-md-4">
+                        <div class="project-img">
+                            <img  src="img/project2.jpg" alt="">
+                            <p class="icon-holder">
+                                <a class="project-link1" href="#"><i class="icon-search-link"></i></a>
+                                <a class="project-link2" href="#"><i class="icon-link"></i></a>
+                            </p>
+                        </div>
+
+                        <div class="project-box-text">
+                            <h6>Quam Nutamus Farum</h6>
+                            <p>Graphic Design, Mock-Up</p>
+                        </div>
+                    </div>
+                    <div class="webTemplates project-box col-12 col-sm-6 col-md-4">
+                        <div class="project-img">
+                            <img  src="img/project3.jpg" alt="">
+                            <p class="icon-holder">
+                                <a class="project-link1" href="#"><i class="icon-search-link"></i></a>
+                                <a class="project-link2" href="#"><i class="icon-link"></i></a>
+                            </p>
+                        </div>
+                        <div class="project-box-text">
+                            <h6>Usus Legentis Videntur</h6>
+                            <p>Photography, Holiday</p>
+                        </div>
+                    </div>
+                    <div class="photo project-box col-12 col-sm-6 col-md-4">
+                        <div class="project-img">
+                            <img  src="img/project4.jpg" alt="">
+                            <p class="icon-holder">
+                                <a class="project-link1" href="#"><i class="icon-search-link"></i></a>
+                                <a class="project-link2" href="#"><i class="icon-link"></i></a>
+                            </p>
+                        </div>
+                        <div class="project-box-text">
+                            <h6>Claritas Etiam Processus</h6>
+                            <p>Photography, Nature</p>
+                        </div>
+                    </div>
+                    <div class="illustration project-box col-12 col-sm-6 col-md-4">
+                        <div class="project-img">
+                            <img  src="img/project5.jpg" alt="">
+                            <p class="icon-holder">
+                                <a class="project-link1" href="#"><i class="icon-search-link"></i></a>
+                                <a class="project-link2" href="#"><i class="icon-link"></i></a>
+                            </p>
+                        </div>
+                        <div class="project-box-text">
+                            <h6>Claritas Etiam Processus</h6>
+                            <p>Graphic Design, Mock-Up</p>
+                        </div>
+                    </div>
+                    <div class="mobile project-box col-12 col-sm-6 col-md-4">
+                        <div class="project-img">
+                            <img  src="img/project6.jpg" alt="">
+                            <p class="icon-holder">
+                                <a class="project-link1" href="#"><i class="icon-search-link"></i></a>
+                                <a class="project-link2" href="#"><i class="icon-link"></i></a>
+                            </p>
+                        </div>
+                        <div class="project-box-text">
+                            <h6>Claritas Etiam Processus</h6>
+                            <p>Photography, Holiday</p>
+                        </div>
+                    </div>
+                    <div class="photo project-box col-12 col-sm-6 col-md-4" >
+                        <div class="project-img">
+                            <img  src="img/project1.jpg" alt="Project1">
+                            <p class="icon-holder">
+                                <a class="project-link1" href="#"><i class="icon-search-link"></i></a>
+                                <a class="project-link2" href="#"><i class="icon-link"></i></a>
+                            </p>
+                        </div>
+                        <div class="project-box-text">
+                            <h6>Claritas Etiam Processus</h6>
+                            <p>Photography, Nature</p>
+                        </div>
+                    </div>
+                    <div class="webTemplates project-box col-12 col-sm-6 col-md-4">
+                        <div class="project-img">
+                            <img  src="img/project2.jpg" alt="">
+                            <p class="icon-holder">
+                                <a class="project-link1" href="#"><i class="icon-search-link"></i></a>
+                                <a class="project-link2" href="#"><i class="icon-link"></i></a>
+                            </p>
+                        </div>
+
+                        <div class="project-box-text">
+                            <h6>Quam Nutamus Farum</h6>
+                            <p>Graphic Design, Mock-Up</p>
+                        </div>
+                    </div>
+                    <div class="webTemplates project-box col-12 col-sm-6 col-md-4">
+                        <div class="project-img">
+                            <img  src="img/project3.jpg" alt="">
+                            <p class="icon-holder">
+                                <a class="project-link1" href="#"><i class="icon-search-link"></i></a>
+                                <a class="project-link2" href="#"><i class="icon-link"></i></a>
+                            </p>
+                        </div>
+                        <div class="project-box-text">
+                            <h6>Usus Legentis Videntur</h6>
+                            <p>Photography, Holiday</p>
+                        </div>
+                    </div>
+                    <div class="photo project-box col-12 col-sm-6 col-md-4">
+                        <div class="project-img">
+                            <img  src="img/project4.jpg" alt="">
+                            <p class="icon-holder">
+                                <a class="project-link1" href="#"><i class="icon-search-link"></i></a>
+                                <a class="project-link2" href="#"><i class="icon-link"></i></a>
+                            </p>
+                        </div>
+                        <div class="project-box-text">
+                            <h6>Claritas Etiam Processus</h6>
+                            <p>Photography, Nature</p>
+                        </div>
+                    </div>
+                    <div class="illustration project-box col-12 col-sm-6 col-md-4">
+                        <div class="project-img">
+                            <img  src="img/project5.jpg" alt="">
+                            <p class="icon-holder">
+                                <a class="project-link1" href="#"><i class="icon-search-link"></i></a>
+                                <a class="project-link2" href="#"><i class="icon-link"></i></a>
+                            </p>
+                        </div>
+                        <div class="project-box-text">
+                            <h6>Claritas Etiam Processus</h6>
+                            <p>Graphic Design, Mock-Up</p>
+                        </div>
+                    </div>
+                    <div class="mobile project-box col-12 col-sm-6 col-md-4">
+                        <div class="project-img">
+                            <img  src="img/project6.jpg" alt="">
+                            <p class="icon-holder">
+                                <a class="project-link1" href="#"><i class="icon-search-link"></i></a>
+                                <a class="project-link2" href="#"><i class="icon-link"></i></a>
+                            </p>
+                        </div>
+                        <div class="project-box-text">
+                            <h6>Claritas Etiam Processus</h6>
+                            <p>Photography, Holiday</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-load">
+                    <button type="button" id="loadMore" class="button-pimary">LOAD MORE</button>
+                </div>
+            </div>
+        </section>
+        <section class="video-section">
+            <div class="header-video" style="opacity: 1;">
+                <iframe src="https://player.vimeo.com/video/305052745?background=1&api=1&autoplay=0&loop=1&title=0&byline=0&portrait=0&muted=0&player_id=vvimeoVid" width="1920" height="1080" frameborder="0"  allowfullscreen></iframe>
+                <div class="play-holder">
+                    <a class="pause stopped"><i id="playback" class="icon-play"></i></a>
+                    <h3 id="videotitle">Waxom Video Presentation</h3>
+                    <p id="videodescription">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.</p>
+                </div>
+            </div>
+        </section>
+        <section class="mobile-device">
+            <div class="container">
+                <div class="mobile-holder row">
+                    <div class="device-img col-12 col-md-6 wow zoomInLeft">
+                        <img src="img/mob-widget.png" alt="Mobile widget">
+                    </div>
+                    <div class="devices-title col-12 col-md-6 wow zoomInRight">
+                        <h3>Excellent for Mobile Devices.</h3>
+                        <p>Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+                        <ul class="device-info">
+                            <li><i class="icon-right"></i>Nam liber tempor cum soluta nobis eleifend option;</li>
+                            <li><i class="icon-right"></i>Option congue nihil imperdiet doming id quod mazim placerat facer;</li>
+                            <li><i class="icon-right"></i>Eodem modo typi, qui nunc nobis videntur parum futurum;</li>
+                            <li><i class="icon-right"></i>Investigationes demonstraverunt lectores;</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="popular">
+            <div class="container">
+                <div class="row popular-holder wow zoomIn">
+                    <div class="client-count">
+                        <img src="img/client.png" alt="Client">
+                        <p class="counter">3587</p>
+                        <span class="popular-info">Satisfied Clients</span>
+                    </div>
+                    <div class="client-count">
+                        <img src="img/tea.png" alt="Tea">
+                        <p class="counter">207</p>
+                        <span class="popular-info">Cups of cofee</span>
+                    </div>
+                    <div class="client-count">
+                        <img src="img/sms.png" alt="Message">
+                        <p class="counter">2500</p>
+                        <span class="popular-info">Blog posts</span>
+                    </div>
+                    <div class="client-count">
+                        <img src="img/heart.png" alt="Likes">
+                        <p class="counter">873</p>
+                        <span class="popular-info">likes</span>
+                    </div>
+                    <div class="client-count">
+                        <img src="img/launch.png" alt="">
+                        <p class="counter">900</p>
+                        <span class="popular-info">We launched</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section>
+            <div class="container">
+                <div class="post-title wow zoomInDown">
+                    <h3>Recent Posts</h3>
+                    <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                </div>
+                <div class="wow zoomIn post-slider owl-carousel owl-theme owl-loaded row" id="owlcarousel2">
+                    <div class="post-box ">
+                        <div class="post-img">
+                            <img  src="img/legs.jpg" alt="">
+                            <div class="calendar-holder">
+                                <span class="cal-date">30</span>
+                                <span class="cal-month">Sep</span>
                             </div>
                         </div>
-                        <div class="webTemplates project-box col-12 col-sm-12 col-md-6 col-lg-4">
-                            <div class="project-img">
-                                <img  src="img/1/project2.jpg" alt="">
-                                <p class="icon-holder">
-                                    <a class="project-link1" href="#"><i class="icon-search-link"></i></a>
-                                    <a class="project-link2" href="#"><i class="icon-link"></i></a>
-                                </p>
-                            </div>
-                            <div class="project-box-text">
-                                <h6>Quam Nutamus Farum</h6>
-                                <p>Graphic Design, Mock-Up</p>
+
+                        <div class="post-box-text">
+                            <h6>Lorem ipsum dolor sit amet</h6>
+                            <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                            <a href="#" class="read-more">Read more &#9658</a>
+                        </div>
+                    </div>
+                    <div class="post-box">
+                        <div class="post-img">
+                            <img  src="img/hands.jpg" alt="">
+                            <div class="calendar-holder">
+                                <span class="cal-date">30</span>
+                                <span class="cal-month">Sep</span>
                             </div>
                         </div>
-                        <div class="webTemplates project-box col-12 col-sm-12 col-md-6 col-lg-4">
-                            <div class="project-img">
-                                <img  src="img/1/project3.jpg" alt="">
-                                <p class="icon-holder">
-                                    <a class="project-link1" href="#"><i class="icon-search-link"></i></a>
-                                    <a class="project-link2" href="#"><i class="icon-link"></i></a>
-                                </p>
-                            </div>
-                            <div class="project-box-text">
-                                <h6>Usus Legentis Videntur</h6>
-                                <p>Photography, Holiday</p>
+                        <div class="post-box-text">
+                            <h6>Lorem ipsum dolor sit amet</h6>
+                            <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                            <a href="#" class="read-more">Read more &#9658</a>
+                        </div>
+                    </div>
+                    <div class="post-box ">
+                        <div class="post-img">
+                            <img  src="img/cruise.jpg" alt="">
+                            <div class="calendar-holder">
+                                <span class="cal-date">30</span>
+                                <span class="cal-month">Sep</span>
                             </div>
                         </div>
-                        <div class="photo project-box col-12 col-sm-12 col-md-6 col-lg-4">
-                            <div class="project-img">
-                                <img  src="img/1/project4.jpg" alt="">
-                                <p class="icon-holder">
-                                    <a class="project-link1" href="#"><i class="icon-search-link"></i></a>
-                                    <a class="project-link2" href="#"><i class="icon-link"></i></a>
-                                </p>
-                            </div>
-                            <div class="project-box-text">
-                                <h6>Claritas Etiam Processus</h6>
-                                <p>Photography, Nature</p>
+                        <div class="post-box-text">
+                            <h6>Lorem ipsum dolor sit amet</h6>
+                            <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                            <a href="#" class="read-more">Read more &#9658</a>
+                        </div>
+                    </div>
+                    <div class="post-box ">
+                        <div class="post-img">
+                            <img  src="img/legs.jpg" alt="">
+                            <div class="calendar-holder">
+                                <span class="cal-date">30</span>
+                                <span class="cal-month">Sep</span>
                             </div>
                         </div>
-                        <div class="illustration project-box col-12 col-sm-12 col-md-6 col-lg-4">
-                            <div class="project-img">
-                                <img  src="img/1/project5.jpg" alt="">
-                                <p class="icon-holder">
-                                    <a class="project-link1" href="#"><i class="icon-search-link"></i></a>
-                                    <a class="project-link2" href="#"><i class="icon-link"></i></a>
-                                </p>
-                            </div>
-                            <div class="project-box-text">
-                                <h6>Claritas Etiam Processus</h6>
-                                <p>Graphic Design, Mock-Up</p>
+
+                        <div class="post-box-text">
+                            <h6>Lorem ipsum dolor sit amet</h6>
+                            <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                            <a href="#" class="read-more">Read more &#9658</a>
+                        </div>
+                    </div>
+                    <div class="post-box">
+                        <div class="post-img">
+                            <img  src="img/hands.jpg" alt="">
+                            <div class="calendar-holder">
+                                <span class="cal-date">30</span>
+                                <span class="cal-month">Sep</span>
                             </div>
                         </div>
-                        <div class="mobile project-box col-12 col-sm-12 col-md-6 col-lg-4">
-                            <div class="project-img">
-                                <img  src="img/1/project6.jpg" alt="">
-                                <p class="icon-holder">
-                                    <a class="project-link1" href="#"><i class="icon-search-link"></i></a>
-                                    <a class="project-link2" href="#"><i class="icon-link"></i></a>
-                                </p>
+                        <div class="post-box-text">
+                            <h6>Lorem ipsum dolor sit amet</h6>
+                            <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                            <a href="#" class="read-more">Read more &#9658</a>
+                        </div>
+                    </div>
+                    <div class="post-box ">
+                        <div class="post-img">
+                            <img  src="img/cruise.jpg" alt="">
+                            <div class="calendar-holder">
+                                <span class="cal-date">30</span>
+                                <span class="cal-month">Sep</span>
                             </div>
-                            <div class="project-box-text">
-                                <h6 class="video-title">Claritas Etiam Processus</h6>
-                                <p class="video-s">Photography, Holiday</p>
-                            </div>
+                        </div>
+                        <div class="post-box-text">
+                            <h6>Lorem ipsum dolor sit amet</h6>
+                            <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                            <a href="#" class="read-more">Read more &#9658</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <div class="container">
-
+    <div class="footer-box">
+        <div class="partners" style="background-image: url(img/bg-footer.jpg)">
+            <div class="container">
+                <div class="partners-img">
+                    <img src="img/barber.png" alt="The barber">
+                    <img src="img/delicios.png" alt="Delicios">
+                    <img src="img/designers.png" alt="Designer">
+                    <img src="img/royal.png" alt="Cafe Royal">
+                </div>
+            </div>
         </div>
-    </footer>
+        <div class="footer-info">
+            <div class="container">
+                <div class="row footer-info-holder">
+                    <article class="about-comp col-12 col-sm-6 col-md-3">
+                        <img src="img/logo.png" alt="Waxom Hompage">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci suscipit lobortis claritatem.</p>
+                        <a href="#" class="read-more">Read more &#9658</a>
+                    </article>
+                    <aside class="recent-post col-12 col-sm-6 col-md-3">
+                        <span class="handle">Recent Posts</span>
+                        <div class="recent-post-holder post1">
+                            <span>September 08, 2015</span>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+                        </div>
+                        <div class="recent-post-holder post2">
+                            <span>September 08, 2015</span>
+                            <p>Diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p>
+                        </div>
+                        <div class="recent-post-holder post3">
+                            <span>September 08, 2015</span>
+                            <p>Claritas est etiam processus dynamicus, qui sequitur mutationem per seacula quarta decima</p>
+                        </div>
+                    </aside>
+                    <aside class="twitter col-12 col-sm-6 col-md-3">
+                        <span class="handle">Our Twitter</span>
+                        <div class="recent-post-holder post1">
+                            <p><a href="#">@waxom</a> Cum soluta nobis eleifend option congue nihil imperdiet doming</p>
+                            <span>3 mins ago</span>
+                        </div>
+                        <div class="recent-post-holder post2">
+                            <p>Mirum est <a href="#">#envato</a> notare quam littera gothica, quam nunc putamus parum anteposuerit litterarum</p>
+                            <span>5 hours ago</span>
+                        </div>
+                        <div class="recent-post-holder post3 ">
+                            <p>Soluta nobis option <a href="#">bit.ly/1Hniso7</a></p>
+                            <span>20 days ago</span>
+                        </div>
+                    </aside>
+                    <aside class="dribbble col-12 col-sm-6 col-md-3">
+                        <span class="handle">Dribbble Widget</span>
+                        <div class="row">
+                            <a href="#"><img src="img/phone.jpg" alt="Phone"></a>
+                            <a href="#"><img src="img/note.jpg" alt="Note"></a>
+                        </div>
+                        <div class="row">
+                            <a href="#"><img src="img/book.jpg" alt="Book"></a>
+                            <a href="#"><img src="img/icons.jpg" alt="Icons"></a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-holder">
+                    <div class="footer-content">
+                        <ul>
+                            <li><a href="#">Copyright © 2015 <b>Waxom</b></a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#"><b>FAQ</b></a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-content">
+                        <ul>
+                            <li><a href="#">Designed by <b>ThemeFire</b></a></li>
+                            <li><a href="#">Only on <b>Envato Market</b></a></li>
+                        </ul>
+                    </div>
+            </div>
+            </div>
+        </footer>
+    </div>
 </div>
-
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/WOW.min.js"></script>
-<script src="js/script.js"></script>
 <script src="js/collapse.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
