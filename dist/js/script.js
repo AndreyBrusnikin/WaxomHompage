@@ -51,34 +51,34 @@ wow = new WOW(
 )
 wow.init();
 
-$(document).ready(function(){
-    var $container = $('.portfolioContainer');
-    $container.isotope({
-        filter: '*',
-        animationOptions: {
-            duration: 750,
-            easing: 'linear',
-            queue: false
-        }
-    });
-
-    $('.portfolioFilter a').click(function(){
-        $('.portfolioFilter .current').removeClass('current');
-        $(this).addClass('current');
-
-        var selector = $(this).attr('data-filter');
-        $container.isotope({
-            filter: selector,
-            animationOptions: {
-                duration: 750,
-                easing: 'linear',
-                queue: false
-            }
-        });
-        return false;
-    });
-});
-
+// $(document).ready(function(){
+//     var $container = $('.portfolioContainer');
+//     $container.isotope({
+//         filter: '*',
+//         animationOptions: {
+//             duration: 750,
+//             easing: 'linear',
+//             queue: false
+//         }
+//     });
+//
+//     $('.portfolioFilter a').click(function(){
+//         $('.portfolioFilter .current').removeClass('current');
+//         $(this).addClass('current');
+//
+//         var selector = $(this).attr('data-filter');
+//         $container.isotope({
+//             filter: selector,
+//             animationOptions: {
+//                 duration: 750,
+//                 easing: 'linear',
+//                 queue: false
+//             }
+//         });
+//         return false;
+//     });
+// });
+//
 
 $(function() {
     var headerHeight, videoHeight, calc;
@@ -139,6 +139,12 @@ $('.counter').counterUp({
    time: 2000
 });
 
-
-
-
+$(document).ready(function() {
+    $('.filter-menu li').on('click', function() {
+        $(this).addClass('active');
+        $(this).siblings(".active").removeClass('active');
+    });
+    var filterizd = $(".filtr-container").filterizr({
+        //options object
+    });
+});
