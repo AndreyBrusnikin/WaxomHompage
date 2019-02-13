@@ -63,6 +63,9 @@ wow = new WOW(
 wow.init();
 
 $(document).ready(function(){
+
+
+
     var $container = $('.portfolioContainer');
     $container.isotope({
         filter: '*',
@@ -88,6 +91,11 @@ $(document).ready(function(){
             }
         });
         return false;
+
+    });
+
+        $container.imagesLoaded().progress(function() {
+        $container.fadeIn(1000).isotope('layout');
     });
 });
 
@@ -148,9 +156,7 @@ $(function() {
 
 $('.counter').counterUp({
    delay: 5,
-   time: 2000
+   time: 1000
 });
-
-
 
 
