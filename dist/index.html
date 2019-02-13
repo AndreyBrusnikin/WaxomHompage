@@ -5,25 +5,22 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Waxom</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdn.rawgit.com/jrue/Vimeo-jQuery-API/master/dist/jquery.vimeo.api.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,600|Raleway:300,400,500,600,800" rel="stylesheet">
     <link rel="stylesheet" href="owl.carousel.min.css">
     <link rel="stylesheet" href="owl.theme.default.min.css">
     <link rel="stylesheet" href="style.min.css">
     <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="animate.min.css">
-    <script src="js/isotope.pkgd.min.js"></script>
 </head>
 <body>
 <div id="wrapper">
     <header class="header" id="toggle-bg">
         <div class="container">
             <nav class="navbar" >
-                    <span class="navbar-toggle" id="js-navbar-toggle">
+                    <a class="navbar-toggle" id="js-navbar-toggle">
                                 <i class="icon-menu" id="icon-toggle-menu"></i>
                                 <i class="icon-close" id="icon-toggle-close"></i>
-                    </span>
+                    </a>
                 <a href="#" class="logo"><img src="img/logo.png" alt="Waxom Homapage"></a>
                 <div class="toggle-main" id="js-menu">
                     <ul class="main-nav" >
@@ -40,7 +37,9 @@
                     <ul class="right-nav">
                         <li><a href="#" class="ico-link"><i class="icon-bag"></i></a></li>
                         <li><a href="#" class="ico-link"><i id="toggle-search" class="icon-search"></i></a></li>
-                        <input style="" id="searchBar" class="searchBar" name="search" type="search" placeholder="Search&hellip;"/>
+                        <form type="search">
+                            <input id="searchBar" class="searchBar" name="search" type="search" placeholder="Search&hellip;"/>
+                        </form>
                     </ul>
                 </div>
             </nav>
@@ -69,36 +68,44 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="common-section">
+        <div class="common-section">
+            <div class="container">
                 <div class="row">
-                    <div class="box-holder wow zoomInLeft col-12 col-sm-6 col-md-6 col-lg-3">
-                        <a href="#" class="section-info">
-                            <i class="icon-pencil"></i>
-                            <h5>Web & App Design</h5>
-                            <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
-                        </a>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="box-holder wow zoomInLeft ">
+                            <a href="#" class="section-info">
+                                <i class="icon-pencil"></i>
+                                <h5>Web & App Design</h5>
+                                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+                            </a>
+                        </div>
                     </div>
-                    <div class="box-holder wow zoomInLeft col-12 col-sm-6 col-md-6 col-lg-3">
-                        <a href="#" class=" section-info">
-                            <i class="icon-layers"></i>
-                            <h5>Development</h5>
-                            <p>Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
-                        </a>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="box-holder wow zoomInLeft ">
+                            <a href="#" class=" section-info">
+                                <i class="icon-layers"></i>
+                                <h5>Development</h5>
+                                <p>Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+                            </a>
+                        </div>
                     </div>
-                    <div class="box-holder wow zoomInRight col-12 col-sm-6 col-md-6 col-lg-3">
-                        <a href="#" class="section-info">
-                            <i class="icon-settings"></i>
-                            <h5>Customization</h5>
-                            <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
-                        </a>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="box-holder wow zoomInRight">
+                            <a href="#" class="section-info">
+                                <i class="icon-settings"></i>
+                                <h5>Customization</h5>
+                                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+                            </a>
+                        </div>
                     </div>
-                    <div class="box-holder wow zoomInRight col-12 col-sm-6 col-md-6 col-lg-3">
-                        <a href="#" class="section-info">
-                            <i class="icon-briefcase"></i>
-                            <h5>Marketing</h5>
-                            <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
-                        </a>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="box-holder wow zoomInRight">
+                            <a href="#" class="section-info">
+                                <i class="icon-briefcase"></i>
+                                <h5>Marketing</h5>
+                                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -108,8 +115,8 @@
                 <div class="ideas-holder wow zoomIn">
                     <h3>Waxom is Realizatiaon of your Ideas.</h3>
                     <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-                    <img src="img/Ideas.png" alt="Ideas">
                 </div>
+                <img src="img/Ideas.png" alt="Ideas">
             </div>
         </section>
         <div class="propouse-section ">
@@ -126,7 +133,7 @@
             </div>
         </div>
         <section class="projects">
-            <div class="container">
+            <div class="container" id="listing">
                 <div class="project-head  ">
                     <h3>Our Latest Projects.</h3>
                     <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
@@ -138,7 +145,7 @@
                         <li><a href="#" data-filter=".photo">Photography</a></li>
                     </ul>
                 </div>
-                <div class="portfolioContainer project-holder row ">
+                <div class="portfolioContainer project-holder row " id="listing">
                     <div class="photo project-box col-12 col-sm-6 col-md-4">
                         <div class="project-img">
                             <img  src="img/project1.jpg" alt="Project1">
@@ -229,14 +236,16 @@
                 <iframe src="https://player.vimeo.com/video/305052745?background=1&api=1&autoplay=0&loop=1&title=0&byline=0&portrait=0&muted=0&player_id=vvimeoVid" width="1920" height="1080" frameborder="0"  allowfullscreen></iframe>
                 <div class="play-holder">
                     <a class="pause stopped"><i id="playback" class="icon-play"></i></a>
-                    <h3 id="videotitle">Waxom Video Presentation</h3>
-                    <p id="videodescription">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.</p>
+                    <div class="video-container">
+                        <h3 id="videotitle">Waxom Video Presentation</h3>
+                        <p id="videodescription">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.</p>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="mobile-device">
             <div class="container">
-                <div class="mobile-holder row">
+                <div class="row">
                     <div class="device-img col-12 col-md-6 wow zoomInLeft">
                         <img src="img/mob-widget.png" alt="Mobile widget">
                     </div>
@@ -253,6 +262,7 @@
                 </div>
             </div>
         </section>
+
         <div class="popular">
             <div class="container">
                 <div class="row popular-holder wow zoomIn">
@@ -284,7 +294,7 @@
                 </div>
             </div>
         </div>
-        <section>
+        <section class="recent">
             <div class="container">
                 <div class="post-title wow zoomInDown">
                     <h3>Recent Posts</h3>
@@ -461,11 +471,15 @@
                             <li><a href="#">Only on <b>Envato Market</b></a></li>
                         </ul>
                     </div>
-            </div>
+                </div>
             </div>
         </footer>
     </div>
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.rawgit.com/jrue/Vimeo-jQuery-API/master/dist/jquery.vimeo.api.min.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
 <script src="js/jquery.waypoints.min.js"></script>
 <script src="js/jquery.counterup.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>

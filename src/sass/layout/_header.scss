@@ -10,7 +10,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  right: 0; 
+  right: 0;
 }
 
 .image-bg:after{
@@ -40,8 +40,13 @@
   display: none;
 }
 
+.icon-menu{
+  font-size: 24px;
+}
+
 .icon-close{
   display: none;
+  font-size: 22px;
 }
 
 .nav-links {
@@ -52,7 +57,7 @@
 .right-nav{
   list-style: none;
   display: flex;
-  margin-left: 23px;
+  padding-left: 23px;
   position: relative;
   justify-content: flex-end;
   top: -310px;
@@ -79,12 +84,9 @@
 }
 
 .navbar-toggle {
-  padding-top: 10px;
   position: absolute;
-  top: 45px;
   right: 30px;
   cursor: pointer;
-  font-size: 24px;
 }
 
 .active {
